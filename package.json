@@ -1,0 +1,23 @@
+{
+  "name": "ambliss-micro-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/Circuit.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ambliss-Micro-Lab/ambliss-micro-lab-js.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ambliss-Micro-Lab/ambliss-micro-lab-js/issues"
+  },
+  "homepage": "https://github.com/Ambliss-Micro-Lab/ambliss-micro-lab-js#readme"
+}
