@@ -51,20 +51,3 @@ export default class Gates{
             return xnor_val;
         }
 };
-
-
-// const c2 = new Gates;
-
-// var A = true;
-// var B = false;
-
-// console.log(c2.and_gate(1,1,1,1,1,1,1), c2.nand_gate(1,1,1,1,1,1,1));
-// console.log(c2.or_gate(1,0,0,0,0,0,0,0), c2.nor_gate(1,0,0,0,0,0,0,0));
-// console.log()
-// console.log(c2.xor_gate(0,0), c2.xnor_gate(0,0));
-// console.log(c2.xor_gate(0,1), c2.xnor_gate(0,1));
-// console.log(c2.xor_gate(1,0), c2.xnor_gate(1,0));
-// console.log(c2.xor_gate(1,1), c2.xnor_gate(1,1));
-// console.log()
-// console.log(c2.not_gate(A))
-// console.log(c2.not_gate(B))
