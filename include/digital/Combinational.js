@@ -80,7 +80,7 @@ export default class Combinational extends Gates{
         return sel;
     }
 
-    decoder(){
+    decoder(sel){
         var ind = 0;
         for(var i = 0 ; i < sel.length ; i++){
             ind = ind * 2 + sel[i];
