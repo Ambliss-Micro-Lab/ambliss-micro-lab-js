@@ -1,20 +1,28 @@
 {
-  "name": "ambliss-micro-lab",
-  "version": "1.0.0",
-  "description": "",
-  "main": "/src/Circuit.js",
+  "name": "micro-lab-ambliss",
+  "version": "1.0.1",
+  "description": "This version consists of all the logic gates and combinational circuits.",
+  "main": "src/Circuit.js",
   "type": "module",
+  "keywords": [
+    "micro lab",
+    "micro-lab",
+    "Electronic circuits",
+    "Electronic-circuits",
+    "Circuit Simulator",
+    "Circuit-Simulator"
+  ],
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/Circuits.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ambliss-Micro-Lab/ambliss-micro-lab-js.git"
   },
-  "author": "",
+  "author": "Y.V.Krishna, K.Phanindra Kumar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ambliss-Micro-Lab/ambliss-micro-lab-js/issues"

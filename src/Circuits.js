@@ -1,4 +1,4 @@
-import Gates from '../include/digital/Gates.js'
+#!/usr/bin/env node
 import Combinational from "../include/digital/Combinational.js"
 
 export default class Circuits extends Combinational{
