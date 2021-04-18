@@ -47,9 +47,27 @@ export default class Combinational extends Gates{
             }
         }
         var num = data.length - ind - 1;
-        console.log(num);
-        // finding the select lines
         
         var n = Math.log2(data.length);
+        var sel = new Array(n).fill(0);
+        var i = n - 1;
+        while(num!=0){
+            sel[i] = num%2;
+            num = num/2;
+            num = parseInt(num);
+            i=i-1;
+        }
+        return sel;
+    }
+
+    decoder(){
+        var ind = 0;
+        for(var i = 0 ; i < sel.length ; i++){
+            ind = ind * 2 + sel[i];
+        }
+        var n = Math.pow(2,sel.length);
+        var data = new Array(n).fill(0);
+        data[n-ind-1] = true;
+        return data;
     }
 }
