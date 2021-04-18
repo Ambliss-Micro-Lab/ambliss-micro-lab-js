@@ -19,6 +19,26 @@ export default class Combinational extends Gates{
         return {sum, carry};
     }
 
+    half_subtractor(x, y){
+        var difference = this.xor_gate(x,y);
+        var x_bar = this.not_gate(x);
+        var borrow = this.and_gate(x_bar,y);
+        return {difference, borrow};
+    }
+
+    full_subtractor(x, y, bin){
+        var difference = this.xor_gate(x,y,bin);
+
+        var x_bar = this.not_gate(x);
+
+        var wire1 = this.and_gate(x_bar,bin);
+        var wire2 = this.and_gate(x_bar,y);
+        var wire3 = this.and_gate(y,bin);
+        
+        var borrow = this.or_gate(wire1,wire2,wire3);
+        return {difference, borrow};
+    }
+
     mux(data, sel){
         var ind=0;
         for(var i=0;i<sel.length;i++){

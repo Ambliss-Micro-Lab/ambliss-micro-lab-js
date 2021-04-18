@@ -1,4 +1,4 @@
-import Circuits from '../src/Circuits.js'
+import Circuits from '../../src/Circuits.js'
 
 const c1 = new Circuits;
 
